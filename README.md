@@ -39,6 +39,23 @@ Installing and using Sharko is easy and simple for new users.
 2. Open the built-in application and fill in the required information.
 3. Copy the code provided and paste the code on the top of your script.
 
+#### Installation through git
+`npm install sharko-auth` <br>
+Or include it directly in your project: <br>
+`<script src="https://cdn.sharko.dev/sharko.min.js"></script>` <br>
+#### Basic Usage
+```
+<script>
+  Sharko.init({
+    appId: "YOUR_APP_ID",
+    redirectUrl: "/dashboard"
+  });
+</script>
+<button onclick="Sharko.login()">Login</button>
+<button onclick="Sharko.register()">Sign Up</button>
+```
+That’s it — Sharko handles the rest 🦈
+
 Now you have a working version of Sharko on your application!
 
 ## Features
