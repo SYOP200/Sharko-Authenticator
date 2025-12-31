@@ -56,6 +56,7 @@ Or include it directly in your project: <br>
 ```
 #### Easy start
 Download the .js file for the plugin and implment the following code.
+
 ```
 <script src="sharko-auth.plugin.js"></script>
 <script>
@@ -75,6 +76,21 @@ Download the .js file for the plugin and implment the following code.
 That’s it — Sharko handles the rest 🦈
 
 Now you have a working version of Sharko on your application!
+
+### Building
+#### Themes
+Theme structure:
+```{
+  background,
+  cardBackground,
+  primary,
+  primaryGradient,
+  text,
+  subtext,
+  border,
+  shadow
+}
+```
 
 ## Features
 -  Secure login credential handling
