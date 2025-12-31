@@ -189,11 +189,11 @@ Best practices for modern authentication <br>
 - Small to medium web apps
 
 ## Roadmap
- - OAuth provider support
- - Passwordless authentication
- - Admin dashboard
- - Role-based access control
- - API key authentication
+ - [x] OAuth provider support
+ - [ ] Passwordless authentication
+ - [ ] Admin dashboard
+ - [ ] Role-based access control
+ - [ ] API key authentication
  
 ## Contributing
 Contributions are welcome! <br>
