@@ -40,6 +40,7 @@ This guide covers: <br>
 ✅ Manual (copy-paste) installation <br>
 ✅ Theme setup <br> 
 ✅ Basic usage <br>
+See more information in the [Documentation](https://github.com/SYOP200/Sharko-Authenticator/blob/dev/Documentation.md)
 ### Requirements
 - React Plugin <br>
 - Node.js 16+ <br>
