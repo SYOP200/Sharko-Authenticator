@@ -1,9 +1,7 @@
 <img width="1395" height="320" alt="pixil-frame-0" src="https://github.com/user-attachments/assets/87c3d710-0bad-4a58-9629-47c85bd573e4" />
 
 ![GitHub top language](https://img.shields.io/github/languages/top/SYOP200/Sharko-Authenticator?style=flat-square&color=0088ff)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/SYOP200/Sharko-Authenticator%20/total?style=flat-square&color=0088ff)
 ![GitHub Repo stars](https://img.shields.io/github/stars/SYOP200/Sharko-Authenticator%20?style=flat-square&color=0088ff)
-![GitHub forks](https://img.shields.io/github/forks/SYOP200/Sharko-Authenticator%20?style=flat-square&color=0088ff)
 ![GitHub watchers](https://img.shields.io/github/watchers/SYOP200/Sharko-Authenticator?style=flat-square&color=0088ff)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/SYOP200/Sharko-Authenticator?style=flat-square&color=0088ff)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/SYOP200/Sharko-Authenticator?style=flat-square&label=PRs&color=0088ff)
