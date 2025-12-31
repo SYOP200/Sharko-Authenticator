@@ -54,6 +54,24 @@ Or include it directly in your project: <br>
 <button onclick="Sharko.login()">Login</button>
 <button onclick="Sharko.register()">Sign Up</button>
 ```
+#### Easy start
+Download the .js file for the plugin and implment the following code.
+```
+<script src="sharko-auth.plugin.js"></script>
+<script>
+  SharkoAuth.init({
+    appName: "Sharko Demo",
+    authType: "email",
+    endpoint: "/api/login",
+    rememberMe: true,
+    passwordReset: true,
+    onSuccess: (data) => {
+      console.log("Logged in!", data);
+      window.location.href = "/dashboard";
+    }
+  });
+</script>
+```
 That’s it — Sharko handles the rest 🦈
 
 Now you have a working version of Sharko on your application!
