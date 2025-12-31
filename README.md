@@ -5,6 +5,8 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/SYOP200/Sharko-Authenticator?style=flat-square&color=0088ff)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/SYOP200/Sharko-Authenticator?style=flat-square&color=0088ff)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/SYOP200/Sharko-Authenticator?style=flat-square&label=PRs&color=0088ff)
+![GitHub License](https://img.shields.io/github/license/SYOP200/Sharko-Authenticator?style=flat-square&color=0088ff)
+
 
 ---
 ## Overview 
