@@ -77,7 +77,10 @@ or (local copy): <br>
 You now have a working authentication UI. <br>
 ### Themes (Optional but Recommended)
 Sharko ships with built-in themes and full customization support. <br>
-Built-in themes <br>
+
+<img width="1024" height="1536" alt="Themes_Screenshot" src="https://github.com/user-attachments/assets/5e6347c4-b1b9-4802-811a-93641e8ea674" />
+
+#### Built-in themes: <br>
 - `purple` (default) <br>
 - `dark` <br>
 - `neon` <br>
