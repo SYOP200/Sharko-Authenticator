@@ -13,7 +13,7 @@
 Sharko is a simple web plugin for websites. Sharko eliminates the hassle of scripting your own authenticator into an app or website. Save login credentials easily and sign in to your application or website.
 
 ## Table of contents
-- [Installation](https://github.com/SYOP200/Sharko-Authenticator/new/main?filename=README.md#installation)
+- [Installation](https://github.com/SYOP200/Sharko-Authenticator/edit/dev/README.md#sharko-auth--installation-guide)
 - [Features](https://github.com/SYOP200/Sharko-Authenticator/new/main?filename=README.md#features)
 - [Security](https://github.com/SYOP200/Sharko-Authenticator/new/main?filename=README.md#security)
 - [Use Cases](https://github.com/SYOP200/Sharko-Authenticator/new/main?filename=README.md#use-cases)
@@ -33,64 +33,133 @@ By using this plugin, you acknowledge and agree that: <br>
 
 If your application handles sensitive, regulated, or high-risk data, you should conduct a professional security review before using Sharko in production. <br>
 
-## Installation 
-Installing and using Sharko is easy and simple for new users.
-1. Download the repository .zip file.
-2. Open the built-in application and fill in the required information.
-3. Copy the code provided and paste the code on the top of your script.
-
-#### Installation through git
+## Sharko Auth — Installation Guide
+Sharko Auth is a lightweight, configurable authentication plugin that works on any website and modern React apps. <br>
+This guide covers: <br>
+✅ React plugin installation <br>
+✅ Manual (copy-paste) installation <br>
+✅ Theme setup <br> 
+✅ Basic usage <br>
+### Requirements
+- React Plugin <br>
+- Node.js 16+ <br>
+- React 17 or higher
+- A backend authentication endpoint (/api/login or similar)
+### Web / HTML Version
+Any static or dynamic website <br>
+No build tools required <br>
+### Installation (React) <br>
+#### 1️⃣ Add Sharko to your project <br>
+If published to npm (recommended future setup): <br>
 `npm install sharko-auth` <br>
-Or include it directly in your project: <br>
-`<script src="https://cdn.sharko.dev/sharko.min.js"></script>` <br>
-#### Basic Usage
+or with Yarn: <br>
+`yarn add sharko-auth` <br> 
+Until published, you can copy the files manually (see below). <br>
+#### 2️⃣ Import the component <br>
+`import SharkoAuth from "sharko-auth";` <br>
+or (local copy): <br>
+`import SharkoAuth from "./SharkoAuth";` <br>
+#### 3️⃣ Use it in your app <br>
 ```
-<script>
-  Sharko.init({
-    appId: "YOUR_APP_ID",
-    redirectUrl: "/dashboard"
-  });
-</script>
-<button onclick="Sharko.login()">Login</button>
-<button onclick="Sharko.register()">Sign Up</button>
+<SharkoAuth
+  appName="My App"
+  authType="email"
+  endpoint="/api/login"
+  rememberMe
+  passwordReset
+  onSuccess={(data) => {
+    console.log("Logged in:", data);
+    window.location.href = "/dashboard";
+  }}
+/>
 ```
-#### Easy start
-Download the .js file for the plugin and implment the following code.
-
+#### That’s it 🎉 
+You now have a working authentication UI. <br>
+### Themes (Optional but Recommended)
+Sharko ships with built-in themes and full customization support. <br>
+Built-in themes <br>
+- `purple` (default) <br>
+- `dark` <br>
+- `neon` <br>
+- `minimal` <br>
+```
+<SharkoAuth theme="dark" /> 
+Override theme values
+<SharkoAuth
+  theme="purple"
+  themeOverrides={{
+    primary: "#22c55e",
+    background: "#020617"
+  }}
+/>
+```
+#### Fully custom theme
+```
+<SharkoAuth
+  theme={{
+    background: "#000",
+    cardBackground: "#111",
+    primary: "#f97316",
+    primaryGradient: "linear-gradient(135deg,#f97316,#ea580c)",
+    text: "#fff",
+    subtext: "#aaa",
+    border: "#333",
+    shadow: "0 0 40px rgba(249,115,22,0.4)"
+  }}
+/>
+```
+### Installation (Plain HTML / No React)
+#### 1️⃣ Copy the plugin file
+Download or copy:
+`sharko-auth.plugin.js`
+#### 2️⃣ Add it to your site
 ```
 <script src="sharko-auth.plugin.js"></script>
 <script>
   SharkoAuth.init({
-    appName: "Sharko Demo",
+    appName: "My Website",
     authType: "email",
     endpoint: "/api/login",
-    rememberMe: true,
-    passwordReset: true,
     onSuccess: (data) => {
       console.log("Logged in!", data);
-      window.location.href = "/dashboard";
     }
   });
 </script>
 ```
-That’s it — Sharko handles the rest 🦈
-
-Now you have a working version of Sharko on your application!
-
-### Building
-#### Themes
-Theme structure:
-```{
-  background,
-  cardBackground,
-  primary,
-  primaryGradient,
-  text,
-  subtext,
-  border,
-  shadow
+No frameworks. No bundlers. No setup.
+### Backend Requirements
+Sharko expects your login endpoint to return:
+```
+{
+  "success": true
 }
 ```
+or on failure:
+```
+{
+  \"success": false
+}
+```
+#### You control:
+- Sessions
+- JWTs
+- Cookies
+- OAuth
+- Storage
+Sharko only handles the UI.
+### Manual Installation (Local Development)
+If you’re not using npm yet:
+```
+/src
+├── SharkoAuth.jsx
+├── sharkoThemes.js
+└── App.jsx
+```
+Then import normally:
+`import SharkoAuth from "./SharkoAuth";`
+### Development
+`npm install`
+`npm run dev`
 
 ## Features
 -  Secure login credential handling
