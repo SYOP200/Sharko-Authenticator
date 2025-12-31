@@ -109,4 +109,6 @@ CC0 1.0 Universal license
 **🌊 Built for Developers** <br>
 Sharko is designed to save time, reduce complexity, and make authentication painless. <br>
 If you like the project, give it a ⭐ on GitHub! <br>
+
+
 © Sharko Contributors
