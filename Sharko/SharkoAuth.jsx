@@ -1,4 +1,11 @@
+import { SharkoThemes, resolveTheme } from "./sharkoThemes"; 
 import React, { useState } from "react";
+
+export default function SharkoAuth({
+  theme = "purple",
+  themeOverrides = {},
+  ...existingProps
+}) {
 
 export default function SharkoAuth({
   appName = "My App",
@@ -47,6 +54,7 @@ export default function SharkoAuth({
     }
   };
 
+  
   return (
     <div style={styles.overlay}>
       <div style={styles.box}>
@@ -95,62 +103,19 @@ export default function SharkoAuth({
 }
 
 const styles = {
+  const t = resolveTheme(theme, themeOverrides);
+
+const styles = {
   overlay: {
-    minHeight: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "linear-gradient(135deg,#667eea,#764ba2)"
+    background: t.background,
+    ...
   },
   box: {
-    background: "#fff",
-    padding: "2rem",
-    borderRadius: "14px",
-    width: "100%",
-    maxWidth: "380px",
-    fontFamily: "sans-serif",
-    boxShadow: "0 25px 70px rgba(0,0,0,0.4)"
-  },
-  title: {
-    textAlign: "center",
-    color: "#667eea",
-    marginBottom: "0.25rem"
-  },
-  subtitle: {
-    textAlign: "center",
-    color: "#666",
-    marginBottom: "1.5rem"
-  },
-  label: {
-    fontWeight: 600,
-    color: "#333"
-  },
-  input: {
-    width: "100%",
-    padding: "0.7rem",
-    borderRadius: "8px",
-    border: "2px solid #e0e0e0",
-    marginTop: "0.3rem",
-    marginBottom: "1rem"
-  },
-  check: {
-    display: "flex",
-    alignItems: "center",
-    gap: "0.5rem",
-    marginBottom: "1rem"
+    background: t.cardBackground,
+    ...
   },
   button: {
-    width: "100%",
-    padding: "0.8rem",
-    border: "none",
-    borderRadius: "8px",
-    background: "linear-gradient(135deg,#667eea,#764ba2)",
-    color: "white",
-    fontWeight: "bold",
-    cursor: "pointer"
-  },
-  reset: {
-    marginTop: "1rem",
-    textAlign: "center"
+    background: t.primaryGradient,
+    ...
   }
 };
