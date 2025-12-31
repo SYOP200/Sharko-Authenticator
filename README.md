@@ -79,8 +79,19 @@ Contributions are welcome! <br>
 4. Open a pull request <br>
 
 ## License
-MIT License © Sharko Contributors
+CC0 1.0 Universal license
+```
+    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+    HEREUNDER.
+```
 
 **🌊 Built for Developers** <br>
 Sharko is designed to save time, reduce complexity, and make authentication painless. <br>
-If you like the project, give it a ⭐ on GitHub!
+If you like the project, give it a ⭐ on GitHub! <br>
+© Sharko Contributors
