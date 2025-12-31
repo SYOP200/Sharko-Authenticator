@@ -19,3 +19,12 @@ Use this section to tell people how to report a vulnerability.
 Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc.
+
+## Security
+Sharko is built with security-first principles: <br>
+Encrypted credential storage <br>
+Secure session handling <br>
+Best practices for modern authentication <br>
+> [!WARNING]
+> 
+> Always follow standard security guidelines and use HTTPS in production.
