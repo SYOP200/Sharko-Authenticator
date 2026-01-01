@@ -190,7 +190,6 @@ Check:
 * GitHub issues
 * Example demos
 
-You can also keep improving this guide as Sharko grows.
 
 ---
 
@@ -210,7 +209,6 @@ Below are sample screenshots you can show in your docs, README, or website.
 
 ![Sharko Promo](sandbox:/mnt/data/A_promotional_series_of_digital_screenshots_showca.png)
 
-> Replace or add your own screenshots as your UI evolves.
 
 ---
 
