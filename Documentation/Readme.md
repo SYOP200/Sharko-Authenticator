@@ -3,4 +3,4 @@
 - [Demos](url)
 - [Common Problems](url)
 - [Plugin](url)
-- [Application](url)
+- [Application](https://github.com/SYOP200/Sharko-Authenticator/blob/dev/Documentation/Application.md)
